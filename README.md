@@ -1,0 +1,1 @@
+# In-an-array-substract-minimum-and-maximum-number-in-an-array
