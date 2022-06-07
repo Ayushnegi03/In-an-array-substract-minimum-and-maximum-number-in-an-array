@@ -1,0 +1,47 @@
+//Using C Program 
+#include <stdio.h>
+
+int main() {
+   //Declarations
+    int n;
+    int i,j,a[10],b[10];
+    int p,q;
+    int x,y;
+    printf("Enter the number");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);//Input the values
+    }
+    for(i=0;i<n;i++)
+    {
+        b[i]=a[i];//Make copy to another variable
+    }
+    for(i=0;i<n;i++)//First find maximum value
+    {
+        for(j=i+1;j<n;j++)
+        {
+        if(a[j]>a[i])
+        {
+            a[i]=a[j];
+            x=a[i];
+        }
+        }
+    }
+    for(p=0;p<n;p++)//Find minimum value
+    {
+        for(q=q+1;q<n;q++)
+        {
+            if(b[q]>b[p])
+            {
+                b[q]=b[p];
+                y=b[q];
+            }
+        }
+    }
+    printf("Greater:%d\n",x);
+    printf("Greater:%d\n",y);
+    printf("%d",x-y);
+    
+    return 0;
+}
